@@ -1,0 +1,5 @@
+New-Item -ItemType Directory -Force -Path data\train\fire, data\train\normal, data\test\fire, data\test\normal, models | Out-Null
+ni data\train\fire\.gitkeep -Force | Out-Null
+ni data\train\normal\.gitkeep -Force | Out-Null
+ni data\test\fire\.gitkeep -Force | Out-Null
+ni data\test\normal\.gitkeep -Force | Out-Null

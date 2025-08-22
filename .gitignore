@@ -1,0 +1,25 @@
+@'
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+fire-env/
+env/
+venv/
+
+# OS/editor
+.DS_Store
+*.code-workspace
+.vscode/
+.idea/
+
+# Secrets & models
+.env
+models/*.pth
+runs/
+
+# Data (keeps structure via .gitkeep. Doesn’t upload full dataset)
+data/train/
+data/test/
+'@ | Out-File -Encoding UTF8 .gitignore
