@@ -111,11 +111,11 @@ def send_whatsapp_alert(label, confidence):
     last_alert_time = now
     client = Client(TWILIO_SID, TWILIO_AUTH)
     msg = client.messages.create(
-        body=f"🔥 ALERT: {label.upper()} detected with {confidence*100:.1f}% confidence!",
+        body=f"Fire ALERT: {label.upper()} detected with {confidence*100:.1f}% confidence!",
         from_=TWILIO_WHATSAPP,
         to=ALERT_TO
     )
-    print(f"📲 WhatsApp Alert sent! SID: {msg.sid}")
+    print(f"WhatsApp Alert sent! SID: {msg.sid}")
 
 
 def detect_realtime(model):
