@@ -1,9 +1,9 @@
 """
 Fire/Smoke Detection & Alert System with ResNet18
 
-- Trains a CNN (ResNet18) to detect Fire vs Normal
-- Runs real-time detection from webcam/video feed
-- Sends WhatsApp alert if Fire is detected 
+Trains a CNN (ResNet18) to detect Fire vs Normal
+Runs real-time detection from webcam/video feed
+Sends WhatsApp alert if Fire is detected 
 """
 
 import os
